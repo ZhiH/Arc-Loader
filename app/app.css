@@ -1,30 +1,27 @@
 /* app css stylesheet */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+.arc-loader-container text.label {
+  fill: #aaaaaa;
+  text-anchor: middle;
+  font-size: 14px;
 }
 
-.menu:before {
-  content: "[";
+.arc-loader-container text.label.percent-label {
+  fill: #888888;
+  text-anchor: start;
 }
 
-.menu:after {
-  content: "]";
+.arc-loader-container text.label.actual-value-label {
+  fill: #888888;
+  font-size: 32px;
+  text-anchor: middle;
 }
 
-.menu > li {
-  display: inline;
+.error-msg-container {
+  color: red;
+  height: 22px;
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+.error-msg {
+  display: none;
 }
